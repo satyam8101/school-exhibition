@@ -1,0 +1,241 @@
+/* ===========================
+   Schools
+=========================== */
+
+.schools {
+
+    padding: 5rem 0;
+
+    background: #FFFFFF;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.schools__header {
+
+    margin-bottom: 3rem;
+
+    text-align: center;
+
+}
+
+.schools__title {
+
+    color: #082A6B;
+
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+/* ===========================
+   Marquee
+=========================== */
+
+.schools__marquee {
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.schools__marquee:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.schools__track {
+
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    gap: 1.5rem;
+
+    will-change: transform;
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.schools__logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8E7E7;
+    width: 274px;
+    height: 120px;
+
+    padding: 1rem;
+
+    background: #FFFFFF;
+
+    flex-shrink: 0;
+
+}
+
+.schools__logo img {
+
+    display: block;
+
+    width: 100%;
+    height: 86px;
+
+    object-fit: contain;
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.schools__marquee--left .schools__track {
+
+    animation: marqueeLeft 28s linear infinite;
+
+}
+
+.schools__marquee--right .schools__track {
+
+    animation: marqueeRight 28s linear infinite;
+
+}
+
+@keyframes marqueeLeft {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+@keyframes marqueeRight {
+
+    from {
+
+        transform: translateX(-50%);
+
+    }
+
+    to {
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/* ===========================
+   Hover
+=========================== */
+
+.schools__marquee:hover .schools__track,
+.schools__marquee:focus-within .schools__track {
+
+    animation-play-state: paused;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:1024px){
+
+    .schools{
+
+        padding:4rem 0;
+
+    }
+
+    .schools__title{
+
+        font-size:34px;
+
+    }
+
+    .schools__logo{
+
+        width:150px;
+        height:90px;
+
+        padding:.75rem;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:767px){
+
+    .schools{
+
+        padding:3rem 0;
+
+    }
+
+    .schools__header{
+
+        margin-bottom:2rem;
+
+    }
+
+    .schools__title{
+
+        font-size:28px;
+
+    }
+
+    .schools__track{
+
+        gap:1rem;
+
+    }
+
+    .schools__logo{
+
+        width:120px;
+        height:72px;
+
+        padding:.5rem;
+
+    }
+
+}
+
+/* ===========================
+   Accessibility
+=========================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    .schools__track{
+
+        animation:none;
+
+    }
+
+}

@@ -1,0 +1,258 @@
+/* ===========================
+   Footer
+=========================== */
+
+.footer {
+
+    margin-top: 5rem;
+    padding-top: 2rem;
+
+    background: linear-gradient(
+        90deg,
+        #0B1445 0%,
+        #4B1F82 100%
+    );
+
+    color: #fff;
+
+}
+
+/* ===========================
+   Top
+=========================== */
+
+.footer__top {
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    gap: 3rem;
+
+    align-items: start;
+
+    padding: 2.5rem 0;
+
+}
+
+.footer__logo {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__logo img {
+
+    width: 141px;
+    height: 124px;
+
+    display: block;
+
+}
+
+/* ===========================
+   Info Grid
+=========================== */
+
+.footer__info {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 2rem;
+
+}
+
+.footer__item {
+
+    display: flex;
+    gap: 1rem;
+
+    align-items: flex-start;
+
+    min-width: 0;
+
+}
+
+.footer__icon {
+
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+}
+
+.footer__icon img {
+
+    width: 100%;
+
+}
+
+.footer__title {
+
+    margin-bottom: .5rem;
+
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.footer__text {
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    opacity: .9;
+
+}
+
+/* ===========================
+   Social
+=========================== */
+
+.footer__social-links {
+
+    display: flex;
+
+    gap: .75rem;
+
+    margin-top: .75rem;
+
+}
+
+.footer__social-links a {
+
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+}
+
+.footer__social-links img {
+
+    width: 100%;
+
+}
+
+/* ===========================
+   Bottom
+=========================== */
+
+.footer__bottom {
+
+    padding: 1.2rem 0;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    background: #fff;
+
+    color: #1D215A;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:1024px) {
+
+    .footer__top {
+
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        text-align: center;
+
+        gap: 2.5rem;
+
+    }
+
+    .footer__info {
+
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+
+        justify-content: center;
+
+        gap: 2rem;
+
+        width: 100%;
+
+        max-width: 720px;
+
+        margin-inline: auto;
+
+    }
+
+    .footer__item {
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:767px) {
+
+    .footer {
+
+        text-align: center;
+
+    }
+
+    .footer__top {
+
+        gap: 2rem;
+
+    }
+
+    .footer__info {
+
+        grid-template-columns: 1fr;
+
+        max-width: 360px;
+
+        margin-inline: auto;
+
+        gap: 2rem;
+
+    }
+
+    .footer__item {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: .75rem;
+
+    }
+
+    .footer__social-links {
+
+        justify-content: center;
+
+    }
+
+}

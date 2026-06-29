@@ -1,0 +1,34 @@
+:root {
+
+    /* Colors */
+
+    --clr-primary: #44206F;
+    --clr-secondary: #F5CF8A;
+
+    --clr-white: #FFFFFF;
+    --clr-black: #1A1A1A;
+
+    --clr-text: #505050;
+
+    --clr-bg: #F7F7F7;
+
+    /* Container */
+
+    /* --container-width: 1200px; */
+    --container-width: 1400px;
+
+    /* Radius */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 28px;
+
+    /* Transition */
+
+    --transition: .3s ease;
+
+    /* Shadow */
+
+    --shadow: 0 15px 40px rgba(0,0,0,.08);
+
+}

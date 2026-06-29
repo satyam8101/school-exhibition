@@ -1,0 +1,176 @@
+@media (max-width:1279px){
+
+    .hero__form{
+        max-width: 500px;
+
+        margin-inline:auto;
+
+    }
+
+}
+
+.hero__form {
+    width: 100%;
+    /* max-width: 414px; */
+    height: 435px;
+
+    padding: 2rem 2rem 0 2rem;
+
+    border-radius: 20px;
+
+    background: rgba(45, 10, 82, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+.hero__form-title {
+    margin-bottom: 1.5rem;
+
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero__form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero__input,
+.hero__textarea {
+    width: 100%;
+
+    padding: 1rem;
+
+    border: 0;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #fff;
+    font: inherit;
+}
+
+.hero__input{
+    height: 50px;
+}
+
+.hero__textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.hero__input::placeholder,
+.hero__textarea::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btn-submit__icon img{
+
+    width:16px;
+    /* height:8.5px; */
+
+    display:block;
+
+    transition:transform .45s ease;
+
+}
+
+.btn--submit {
+
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    width: 210px;
+    height: 60px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+/* White Animated Layer */
+
+.btn-submit__fill {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 100%;
+
+    background: #FFFFFF;
+
+    transition: width .45s ease;
+
+    z-index: 0;
+}
+
+/* Arrow */
+
+.btn-submit__icon {
+
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    color: #2B1768;
+
+    z-index: 2;
+}
+
+/* Text */
+
+.btn-submit__text {
+
+    position: relative;
+
+    flex: 1;
+
+    text-align: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+
+    color: #FFFFFF;
+
+    transition: color .45s ease;
+
+    z-index: 2;
+}
+
+/* Active State */
+
+.btn--submit.btn--active .btn-submit__fill {
+
+    width: 100%;
+    
+}
+
+.btn--submit.btn--active .btn-submit__text {
+
+    color: #2B1768;
+}
+.btn--submit.btn--active .btn-submit__icon img{
+
+    transform:rotate(45deg);
+
+}

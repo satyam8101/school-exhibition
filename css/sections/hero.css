@@ -1,0 +1,103 @@
+/* ===========================
+   Hero
+=========================== */
+
+.hero {
+    min-height: 720px;
+    overflow: hidden;
+
+    background: linear-gradient(
+        90deg,
+        #0B1445 0%,
+        #4B1F82 100%
+    );
+}
+
+.hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 3rem 0;
+}
+
+/* ===========================
+   Hero Content
+=========================== */
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__title {
+    margin-bottom: 1rem;
+
+    color: #FFD38A;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.hero__title-highlight {
+    display: block;
+}
+
+.hero__subtitle {
+    margin-bottom: 2rem;
+
+    color: #FFD38A;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .08em;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:1279px){
+
+    .hero__content{
+        margin-inline:auto;
+        text-align:center;
+    }
+
+}
+
+@media (min-width:768px){
+
+    .hero__wrapper{
+        gap:3rem;
+    }
+
+    .hero__title{
+        font-size:40px;
+    }
+
+    .hero__subtitle{
+        font-size:30px;
+    }
+
+}
+
+@media (min-width:1280px){
+
+    .hero__wrapper{
+
+        grid-template-columns:520px 1fr 414px;
+
+        column-gap:2rem;
+
+        align-items:center;
+
+        min-height:720px;
+
+        padding:0;
+
+    }
+
+}

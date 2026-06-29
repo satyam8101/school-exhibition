@@ -1,0 +1,174 @@
+.hero__gallery {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    height: 720px;
+
+    overflow: hidden;
+}
+
+.hero__column {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    will-change: transform;
+}
+
+/* Images */
+
+.hero__column img {
+
+    display: block;
+    width: 100%;
+
+    border-radius: 999px;
+
+    object-fit: cover;
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+.hero__column--one {
+
+    animation: heroScroll 10s linear infinite;
+
+}
+
+.hero__column--two {
+
+    animation: heroScrollMiddle 10s linear infinite;
+
+}
+
+.hero__column--three {
+
+    animation: heroScroll 10s linear infinite;
+
+}
+
+/* Left & Right */
+
+@keyframes heroScroll {
+
+    from {
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        transform: translateY(-50%);
+
+    }
+
+}
+
+/* Middle */
+
+@keyframes heroScrollMiddle {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    35% {
+
+        transform: translateY(-25%);
+
+    }
+
+    /* Pause */
+
+    50% {
+
+        transform: translateY(-25%);
+
+    }
+
+    /* Continue */
+
+    100% {
+
+        transform: translateY(-50%);
+
+    }
+
+}
+
+/* Pause animation */
+
+.hero__gallery:hover .hero__column,
+.hero__gallery:focus-within .hero__column {
+
+    animation-play-state: paused;
+
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero__column {
+
+        animation: none;
+
+    }
+
+}
+
+@media (max-width: 1279px) {
+
+    .hero__gallery {
+
+        height: 500px;
+
+        gap: .75rem;
+
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .hero__gallery {
+
+        height: 320px;
+
+        gap: .5rem;
+
+    }
+
+}
+
+@media (max-width:1279px){
+
+    .hero__gallery{
+
+        max-width:480px;
+
+        width:100%;
+
+        margin-inline:auto;
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .hero__gallery{
+
+        max-width:320px;
+
+    }
+
+}

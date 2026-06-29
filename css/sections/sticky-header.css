@@ -1,0 +1,168 @@
+/* ===========================
+   Sticky Header
+=========================== */
+
+.sticky-header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    background: linear-gradient(
+        90deg,
+        #0B1445 0%,
+        #4B1F82 100%
+    );
+
+    z-index: 900;
+    border-bottom: 1px solid #4B1F82;
+}
+
+.sticky-header__wrapper {
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sticky-header__logo {
+
+    width: 90px;
+    height: auto;
+
+}
+
+/* ===========================
+   Main Header
+=========================== */
+
+.header {
+
+    position: relative;
+
+    z-index: 1000;
+
+    background: #fff;
+
+}
+
+/* ===========================
+   Sticky Register Button
+=========================== */
+
+.sticky-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:1rem;
+
+    height:64px;
+
+    padding-inline:2rem;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    color:#1E4F9E;
+
+    text-decoration:none;
+
+    font-size:18px;
+    font-weight:700;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+.sticky-btn__text{
+
+    white-space:nowrap;
+
+}
+
+.sticky-btn__icon{
+
+    display:grid;
+    place-items:center;
+
+    width:24px;
+    height:24px;
+
+    font-size:24px;
+
+    transition:transform .3s ease;
+
+}
+
+/* Hover */
+
+.sticky-btn:hover{
+
+    background:#F5F5F5;
+
+    transform:translateY(-2px);
+
+}
+
+.sticky-btn:hover .sticky-btn__icon{
+
+    transform:translateX(4px);
+
+}
+
+/* Focus */
+
+.sticky-btn:focus-visible{
+
+    outline:2px solid #FFD38A;
+
+    outline-offset:3px;
+
+}
+
+/* Active */
+
+.sticky-btn:active{
+
+    transform:translateY(0);
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:767px){
+
+    .sticky-btn{
+
+        height:52px;
+
+        padding-inline:1.25rem;
+
+        gap:.75rem;
+
+        font-size:15px;
+
+    }
+
+    .sticky-btn__icon{
+
+        font-size:20px;
+
+    }
+
+}

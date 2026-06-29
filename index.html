@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/base.css" />
+
+    <title>Premier Schools Exhibition</title>
+  </head>
+
+  <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link"> Skip to content </a>
+
+    <header class="sticky-header">
+      <div class="container sticky-header__wrapper">
+        <img
+          src="assets/images/header_logo.png"
+          alt="Premier Schools Exhibition"
+          class="sticky-header__logo"
+        />
+
+        <a href="#" class="sticky-btn">
+          <span class="sticky-btn__text">Register Now</span>
+
+          <span class="sticky-btn__icon"> &#8594; </span>
+        </a>
+      </div>
+    </header>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a
+            href="/"
+            class="header__logo"
+            aria-label="Premier Schools Exhibition Home"
+          >
+            <img
+              src="assets/images/header_logo.png"
+              alt="Premier Schools Exhibition"
+            />
+          </a>
+
+          <button class="btn btn--register">
+            <span class="btn__fill"></span>
+
+            <span class="btn__icon">
+              <img src="./assets//images/white-arrow.png" />
+            </span>
+
+            <span class="btn__text"> REGISTER NOW </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__wrapper">
+            <!-- ======================
+                       Left Content
+                  ======================= -->
+
+            <div class="hero__content">
+              <h1 id="hero-title" class="hero__title">
+                Discover Gurugram's
+                <span class="hero__title-highlight"> Top 30+ Schools </span>
+              </h1>
+
+              <p class="hero__subtitle">ALL IN ONE PLACE</p>
+
+              <div class="hero__event-card">
+                <div class="hero__event">
+                  <h3 class="hero__event-heading">Apparel House,</h3>
+
+                  <p class="hero__event-subtext">Sec 44, Gurugram</p>
+                </div>
+
+                <span class="hero__event-divider" aria-hidden="true"></span>
+
+                <div class="hero__event">
+                  <h3 class="hero__event-heading">2-3 August 2025</h3>
+
+                  <p class="hero__event-subtext">Sat-Sun | 10AM - 6PM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ======================
+                       Image Gallery
+                  ======================= -->
+
+            <div class="hero__gallery" aria-hidden="true">
+              <div class="hero__column hero__column--one">
+                <img src="assets/images/hero1.png" alt="" />
+                <img src="assets/images/hero2.png" alt="" />
+                <img src="assets/images/hero3.png" alt="" />
+                <img src="assets/images/hero4.png" alt="" />
+
+                <img src="assets/images/hero1.png" alt="" />
+                <img src="assets/images/hero2.png" alt="" />
+                <img src="assets/images/hero3.png" alt="" />
+                <img src="assets/images/hero4.png" alt="" />
+              </div>
+
+              <div class="hero__column hero__column--two">
+                <img src="assets/images/hero5.png" alt="" />
+                <img src="assets/images/hero6.png" alt="" />
+                <img src="assets/images/hero7.png" alt="" />
+                <img src="assets/images/hero8.png" alt="" />
+                <img src="assets/images/hero5.png" alt="" />
+                <img src="assets/images/hero6.png" alt="" />
+                <img src="assets/images/hero7.png" alt="" />
+                <img src="assets/images/hero8.png" alt="" />
+              </div>
+
+              <div class="hero__column hero__column--three">
+                <img src="assets/images/hero9.png" alt="" />
+                <img src="assets/images/hero10.png" alt="" />
+                <img src="assets/images/hero11.png" alt="" />
+                <img src="assets/images/hero12.png" alt="" />
+
+                <img src="assets/images/hero9.png" alt="" />
+                <img src="assets/images/hero10.png" alt="" />
+                <img src="assets/images/hero11.png" alt="" />
+                <img src="assets/images/hero12.png" alt="" />
+              </div>
+            </div>
+
+            <!-- ======================
+                       Enquiry Form
+                  ======================= -->
+
+            <aside class="hero__form">
+              <h2 class="hero__form-title">Enquire Now</h2>
+
+              <!-- <p class="hero__form-description">
+                Fill in your details and our team will get in touch.
+              </p> -->
+
+              <form class="hero__form-body">
+                <div class="hero__field">
+                  <!-- <label for="name" class="hero__label">Parent's Name</label> -->
+                  <input
+                    id="name"
+                    class="hero__input"
+                    type="text"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <div class="hero__field">
+                  <!-- <label for="phone" class="hero__label">Phone Number</label> -->
+                  <input
+                    id="phone"
+                    class="hero__input"
+                    type="tel"
+                    placeholder="Enter phone number"
+                  />
+                </div>
+
+                <div class="hero__field">
+                  <!-- <label for="grade" class="hero__label"
+                    >Looking for Grade</label
+                  > -->
+                  <textarea
+                    id="grade"
+                    class="hero__textarea"
+                    placeholder="Which grade are you looking for?"
+                  ></textarea>
+                </div>
+
+                <button class="btn--submit" id="submitButton" type="submit">
+                  <span class="btn-submit__fill"></span>
+
+                  <span class="btn-submit__icon">
+                    <img src="./assets/images/blue-arrow.png" />
+                  </span>
+
+                  <span class="btn-submit__text"> SUBMIT </span>
+                </button>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container">
+          <div class="stats__wrapper">
+            <article class="stats__item">
+              <img
+                class="stats__laurel"
+                src="assets/images/left_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="stats__content">
+                <h3 class="stats__number">Trusted by<br />1 Million+</h3>
+                <p class="stats__text">Parents</p>
+              </div>
+
+              <img
+                class="stats__laurel"
+                src="assets//images/right_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </article>
+            <article class="stats__item">
+              <img
+                class="stats__laurel"
+                src="assets/images/left_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="stats__content">
+                <h3 class="stats__number">22+<br />Years</h3>
+                <p class="stats__text">Legacy</p>
+              </div>
+
+              <img
+                class="stats__laurel"
+                src="assets//images/right_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </article>
+            <article class="stats__item">
+              <img
+                class="stats__laurel"
+                src="assets/images/left_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="stats__content">
+                <h3 class="stats__number">500+<br />Participating</h3>
+                <p class="stats__text">Schools</p>
+              </div>
+
+              <img
+                class="stats__laurel"
+                src="assets//images/right_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </article>
+            <article class="stats__item">
+              <img
+                class="stats__laurel"
+                src="assets/images/left_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+
+              <div class="stats__content">
+                <h3 class="stats__number">17 Cities<br />Across</h3>
+                <p class="stats__text">The Globe</p>
+              </div>
+
+              <img
+                class="stats__laurel"
+                src="assets//images/right_Isolation_Mode.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="schools">
+        <div class="container">
+          <div class="schools__header">
+            <h2 class="section-title">Participating Schools</h2>
+          </div>
+
+          <div class="schools__marquee schools__marquee--left">
+            <div class="schools__track">
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school1.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school2.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school3.png"
+                  alt="ABC International School"
+                />
+              </div>
+
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school4.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school5.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school6.png"
+                  alt="ABC International School"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="schools__marquee schools__marquee--right">
+            <div class="schools__track">
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school1.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school2.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school3.png"
+                  alt="ABC International School"
+                />
+              </div>
+
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school4.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school5.png"
+                  alt="ABC International School"
+                />
+              </div>
+              <div class="schools__logo">
+                <img
+                  src="assets/images/school6.png"
+                  alt="ABC International School"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="school-types">
+        <div class="container">
+          <div class="school-types__header">
+            <h2 class="section-title">Choose the School That Fits You Best</h2>
+          </div>
+
+          <div class="school-types__slider">
+            <div class="school-types__track">
+              <article class="school-card">
+                <img src="./assets/images/school-fit1.png" alt="" />
+              </article>
+
+              <article class="school-card">
+                <img src="./assets/images/school-fit02.png" alt="" />
+              </article>
+
+              <article class="school-card">
+                <img src="./assets/images/school-fit03.png" alt="" />
+              </article>
+
+              <article class="school-card">
+                <img src="./assets/images/school-fit4.png" alt="" />
+              </article>
+            </div>
+          </div>
+          <div class="school-types__pagination"></div>
+        </div>
+      </section>
+
+      <section class="appointment">
+        <div class="appointment__wrapper">
+          <div class="appointment__content">
+            <p class="appointment__tag">Exciting Opportunities for Parents!</p>
+
+            <h2 class="appointment__title">
+              Pre-schedule Your School Appointments
+            </h2>
+
+            <p class="appointment__subtitle">To Avoid Rush</p>
+
+            <button class="btn btn--appointment">...</button>
+          </div>
+
+          <div class="appointment__image">
+            <img
+              src="assets/images/appointment.png"
+              alt="Parents interacting with school representatives"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="features__header">
+            <h2 class="section-title">
+              What Makes This Exhibition a Must-Visit
+            </h2>
+          </div>
+
+          <div class="features__viewport">
+            <div class="features__slider">
+              <article class="feature-card">
+                <img
+                  class="feature-card__icon"
+                  src="assets//images/exhibition-logo-1.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <h3 class="feature-card__title">
+                  Interact Directly with School Heads
+                </h3>
+
+                <p class="feature-card__text">
+                  Get answers straight from the experts.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <img
+                  class="feature-card__icon"
+                  src="assets/images/exhibition-logo-2.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <h3 class="feature-card__title">
+                  Compare Curriculum & Pedagogy
+                </h3>
+
+                <p class="feature-card__text">
+                  Understand the differences between CBSE, ICSE, IB, Cambridge,
+                  Finnish and more.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <img
+                  class="feature-card__icon"
+                  src="assets/images/exhibition-logo-3.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <h3 class="feature-card__title">
+                  Get Exclusive Fee Structures
+                </h3>
+
+                <p class="feature-card__text">
+                  Access transparent information and avoid offers.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <img
+                  class="feature-card__icon"
+                  src="assets/images/exhibition-logo-4.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <h3 class="feature-card__title">Explore Schools Offerings</h3>
+
+                <p class="feature-card__text">
+                  Preview infrastructure, co-curricular, learning methodology
+                  and culture.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <img
+                  class="feature-card__icon"
+                  src="assets/images/exhibition-logo-5.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+
+                <h3 class="feature-card__title">On-the-Spot Counselling</h3>
+
+                <p class="feature-card__text">
+                  Save time with admissions guidance from experts.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="features__controls">
+            <button
+              class="features__arrow features__arrow--prev"
+              aria-label="Previous feature"
+            >
+              &#8592;
+            </button>
+
+            <button
+              class="features__arrow features__arrow--next"
+              aria-label="Next feature"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="#" class="footer__logo">
+            <img
+              src="./assets//images/header_logo.png"
+              alt="Premier Schools Exhibition"
+            />
+          </a>
+
+          <div class="footer__info">
+            <div class="footer__item">
+              <div class="footer__icon">
+                <img src="assets/images/location-logo.svg" alt="" />
+              </div>
+
+              <div>
+                <h3 class="footer__title">Corporate Office:</h3>
+
+                <p class="footer__text">
+                  Suite B-5, Ballygunge Park Tower,<br />
+                  67B Ballygunge Circular Road,<br />
+                  Kolkata - 700019
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__item">
+              <div class="footer__icon">
+                <img src="assets/images/location-logo.svg" alt="" />
+              </div>
+
+              <div>
+                <h3 class="footer__title">Ahmedabad Office:</h3>
+
+                <p class="footer__text">
+                  12/A, Swastik Chambers,<br />
+                  Near CU Shah College,<br />
+                  Ahmedabad - 380009
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__item">
+              <div class="footer__icon">
+                <img src="assets/images/call-logo.svg" alt="" />
+              </div>
+
+              <div>
+                <h3 class="footer__title">Call us on</h3>
+
+                <p class="footer__text">
+                  9674805912<br />
+                  9674585012
+                </p>
+              </div>
+            </div>
+
+            <div class="footer__social">
+              <h3 class="footer__title">Follow us on</h3>
+
+              <div class="footer__social-links">
+                <a href="#"
+                  ><img src="assets/images/insta-logo.svg" alt=""
+                /></a>
+
+                <a href="#"><img src="assets/images/fb-logo.svg" alt="" /></a>
+
+                <a href="#"
+                  ><img src="assets/images/youtube-logo.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__bottom">
+      Copyright © 2025 | All rights reserved. Premier Schools Exhibition
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/choose-school.js"></script>
+    <script src="js/exhibition.js"></script>
+  </body>
+</html>

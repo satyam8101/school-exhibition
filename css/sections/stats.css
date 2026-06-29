@@ -1,0 +1,145 @@
+/* ===========================
+   Stats
+=========================== */
+
+.stats {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.stats__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 0;
+
+    text-align: center;
+}
+
+.stats__laurel {
+    max-width: 92px;
+    height: auto;
+
+    flex-shrink: 0;
+}
+
+.stats__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 0;
+
+    gap: .25rem;
+}
+
+.stats__number {
+    color: #082A6B;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.stats__text {
+    color: #082A6B;
+
+    font-size: 27.96px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* ===========================
+   Large Tablet
+=========================== */
+
+@media (max-width: 1200px) {
+
+    .stats {
+        padding: 2rem 0;
+    }
+
+    .stats__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 700px;
+
+        margin-inline: auto;
+
+        gap: 2.5rem 2rem;
+    }
+
+    .stats__item {
+        display: grid;
+
+        grid-template-columns: 72px 1fr 72px;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .stats__content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .stats__laurel {
+        max-width: 72px;
+        width: 100%;
+    }
+
+    .stats__number {
+        font-size: 22px;
+    }
+
+    .stats__text {
+        font-size: 17px;
+    }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 767px) {
+
+    .stats {
+        padding: 2.5rem 0;
+    }
+
+    .stats__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 380px;
+
+        gap: 2rem 1rem;
+    }
+
+    .stats__item {
+        grid-template-columns: 44px 1fr 44px;
+    }
+
+    .stats__laurel {
+        max-width: 44px;
+    }
+
+    .stats__number {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .stats__text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}

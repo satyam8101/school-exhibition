@@ -1,0 +1,221 @@
+/* ===========================
+   Header
+=========================== */
+
+.header {
+    background: #fff;
+    position:relative;
+
+    z-index:1000;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header__logo img {
+    position: absolute;
+    width: 104.2px;
+    
+    height: 80px;
+    top: 3px;
+}
+
+.header__button {
+    flex-shrink: 0;
+}
+
+/* ===========================
+   Register Button
+=========================== */
+
+.btn--register {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 48px;
+
+    border: 2px solid #000E38;
+    border-radius: 4px;
+
+    overflow: hidden;
+    background: #fff;
+
+    cursor: pointer;
+}
+
+/* Animated Fill */
+
+.btn__fill {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 48px;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #3F186A,
+        #000E38
+    );
+
+    transition: width .45s ease;
+
+    z-index: 0;
+}
+
+/* Icon */
+
+.btn__icon {
+    position: relative;
+
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+/* Text */
+
+.btn__text {
+    position: relative;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #000E38;
+
+    transition: color .45s ease;
+
+    z-index: 2;
+}
+
+/* Active */
+
+.btn--register.btn--active .btn__fill {
+    width: 100%;
+}
+
+.btn--register.btn--active .btn__text {
+    color: #fff;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (min-width: 768px) {
+
+    .header__wrapper {
+        height: 90px;
+    }
+
+    .header__logo img {
+        width: 180px;
+        height: 120px;
+    }
+
+    .btn--register {
+        width: 190px;
+        height: 54px;
+    }
+
+    .btn__fill {
+        width: 54px;
+    }
+
+    .btn__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .btn__text {
+        font-size: 13px;
+    }
+}
+
+/* ===========================
+   Desktop
+=========================== */
+
+@media (min-width: 1280px) {
+
+    .header__wrapper {
+        height: 100px;
+    }
+
+    .header__logo img {
+        width: 201px;
+        height: 157px;
+    }
+
+    .btn--register {
+        width: 205px;
+        height: 60px;
+    }
+
+    .btn__fill {
+        width: 60px;
+    }
+
+    .btn__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn__text {
+        font-size: 14px;
+    }
+}
+
+/* ===========================
+   Register Button Icon
+=========================== */
+
+.btn__icon{
+
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: inherit;
+ 
+
+    z-index: 2;
+
+}
+
+.btn__icon img{
+
+    width: 16px;
+
+    display: block;
+
+    transition: transform .45s ease;
+
+}
+
+/* Rotate when button becomes active */
+
+.btn--register.btn--active .btn__icon img{
+
+    transform: rotate(45deg);
+
+}
